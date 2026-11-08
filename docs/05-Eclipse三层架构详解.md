@@ -7,42 +7,42 @@
 
 ## 零、缩写与全称速查
 
-| 缩写/术语       | 英文全称                                  | 中文翻译               | 备注                                           |
-| ----------- | ------------------------------------- | ------------------ | -------------------------------------------- |
-| RCP         | Rich Client Platform                  | 富客户端平台             | 基于 Eclipse 平台构建桌面应用                          |
-| IDE         | Integrated Development Environment    | 集成开发环境             | Eclipse IDE 是 Eclipse 平台的一个产品                |
-| OSGi        | Open Services Gateway initiative      | 开放服务网关规范           | 模块化规范；Equinox 是它的实现                          |
-| JVM         | Java Virtual Machine                  | Java 虚拟机           | 运行 Java 字节码                                  |
-| JRE         | Java Runtime Environment              | Java 运行时环境         | 只能运行 Java 程序                                 |
-| JDK         | Java Development Kit                  | Java 开发工具包         | 含 JRE、编译器和工具                                 |
-| JAR         | Java Archive                          | Java 归档文件          | 通常作为 Bundle 的载体                              |
-| API         | Application Programming Interface     | 应用程序编程接口           | `Export-Package` 暴露的就是 API                   |
-| BREE        | Bundle Required Execution Environment | Bundle 所需执行环境      | `MANIFEST.MF` 中声明的最低 Java 版本                 |
-| JDT         | Java Development Tools                | Java 开发工具          | Eclipse 的 Java IDE 功能                        |
-| PDE         | Plug-in Development Environment       | 插件开发环境             | 开发 Bundle、Feature、Product 的工具                |
-| ECJ         | Eclipse Compiler for Java             | Eclipse Java 编译器   | Eclipse 内部使用的 Java 编译器                       |
-| JDI         | Java Debug Interface                  | Java 调试接口          | JDT 调试器的基础                                   |
-| EGit        | Eclipse Git Team Provider             | Eclipse 的 Git 集成   | 基于 JGit                                      |
-| JGit        | Java Git                              | 纯 Java 实现的 Git 库   | EGit 的底层                                     |
-| m2e         | Maven Integration for Eclipse         | Maven 与 Eclipse 集成 | Eclipse 的 Maven 插件                           |
-| p2          | Provisioning Platform 2               | 配置/供应平台（第 2 代）     | Eclipse 的安装/更新系统                             |
-| IU          | Installable Unit                      | 可安装单元              | p2 的安装单位                                     |
-| SWT         | Standard Widget Toolkit               | 标准控件工具包            | Eclipse 的原生控件库                               |
-| JFace       | —（不是缩写，是框架名）                          | Eclipse UI 框架      | 建立在 SWT 之上                                   |
-| e4          | Eclipse 4                             | Eclipse 第 4 代应用平台  | 不是缩写；提供应用模型、DI、CSS                           |
-| EMF         | Eclipse Modeling Framework            | Eclipse 建模框架       | e4 应用模型基于 EMF                                |
-| MVC         | Model-View-Controller                 | 模型-视图-控制器          | JFace Viewer 的核心思想                           |
-| DI          | Dependency Injection                  | 依赖注入               | e4 用 `IEclipseContext` 实现                    |
-| CSS         | Cascading Style Sheets                | 层叠样式表              | e4 用它做主题                                     |
-| UI          | User Interface                        | 用户界面               |                                              |
-| JNI         | Java Native Interface                 | Java 本地接口          | SWT 调用原生控件时使用                                |
-| GC          | Graphics Context                      | 图形上下文              | SWT 中为图形上下文；JVM 参数中为垃圾回收（Garbage Collection） |
-| XML         | Extensible Markup Language            | 可扩展标记语言            | `plugin.xml`、`feature.xml` 等                 |
-| MANIFEST.MF | Manifest file                         | Bundle 元数据清单       | 不是缩写；OSGi Bundle 的清单文件                       |
-| `M` 前缀      | Model                                 | 模型                 | 如 `MApplication`、`MPart`                     |
-| `I` 前缀      | Interface                             | 接口                 | 如 `IWorkbench`、`IEclipseContext`             |
-| 3.x         | Eclipse 3.x                           | Eclipse 第 3 代平台    | 通过兼容层继续存在                                    |
-| 4.x / e4    | Eclipse 4.x                           | Eclipse 第 4 代平台    | 现代 Workbench 运行时                             |
+| 缩写/术语 | 英文全称 | 中文翻译 | 备注 |
+|---|---|---|---|
+| RCP | Rich Client Platform | 富客户端平台 | 基于 Eclipse 平台构建桌面应用 |
+| IDE | Integrated Development Environment | 集成开发环境 | Eclipse IDE 是 Eclipse 平台的一个产品 |
+| OSGi | Open Services Gateway initiative | 开放服务网关规范 | 模块化规范；Equinox 是它的实现 |
+| JVM | Java Virtual Machine | Java 虚拟机 | 运行 Java 字节码 |
+| JRE | Java Runtime Environment | Java 运行时环境 | 只能运行 Java 程序 |
+| JDK | Java Development Kit | Java 开发工具包 | 含 JRE、编译器和工具 |
+| JAR | Java Archive | Java 归档文件 | 通常作为 Bundle 的载体 |
+| API | Application Programming Interface | 应用程序编程接口 | `Export-Package` 暴露的就是 API |
+| BREE | Bundle Required Execution Environment | Bundle 所需执行环境 | `MANIFEST.MF` 中声明的最低 Java 版本 |
+| JDT | Java Development Tools | Java 开发工具 | Eclipse 的 Java IDE 功能 |
+| PDE | Plug-in Development Environment | 插件开发环境 | 开发 Bundle、Feature、Product 的工具 |
+| ECJ | Eclipse Compiler for Java | Eclipse Java 编译器 | Eclipse 内部使用的 Java 编译器 |
+| JDI | Java Debug Interface | Java 调试接口 | JDT 调试器的基础 |
+| EGit | Eclipse Git Team Provider | Eclipse 的 Git 集成 | 基于 JGit |
+| JGit | Java Git | 纯 Java 实现的 Git 库 | EGit 的底层 |
+| m2e | Maven Integration for Eclipse | Maven 与 Eclipse 集成 | Eclipse 的 Maven 插件 |
+| p2 | Provisioning Platform 2 | 配置/供应平台（第 2 代） | Eclipse 的安装/更新系统 |
+| IU | Installable Unit | 可安装单元 | p2 的安装单位 |
+| SWT | Standard Widget Toolkit | 标准控件工具包 | Eclipse 的原生控件库 |
+| JFace | —（不是缩写，是框架名） | Eclipse UI 框架 | 建立在 SWT 之上 |
+| e4 | Eclipse 4 | Eclipse 第 4 代应用平台 | 不是缩写；提供应用模型、DI、CSS |
+| EMF | Eclipse Modeling Framework | Eclipse 建模框架 | e4 应用模型基于 EMF |
+| MVC | Model-View-Controller | 模型-视图-控制器 | JFace Viewer 的核心思想 |
+| DI | Dependency Injection | 依赖注入 | e4 用 `IEclipseContext` 实现 |
+| CSS | Cascading Style Sheets | 层叠样式表 | e4 用它做主题 |
+| UI | User Interface | 用户界面 |  |
+| JNI | Java Native Interface | Java 本地接口 | SWT 调用原生控件时使用 |
+| GC | Graphics Context | 图形上下文 | SWT 中为图形上下文；JVM 参数中为垃圾回收（Garbage Collection） |
+| XML | Extensible Markup Language | 可扩展标记语言 | `plugin.xml`、`feature.xml` 等 |
+| MANIFEST.MF | Manifest file | Bundle 元数据清单 | 不是缩写；OSGi Bundle 的清单文件 |
+| `M` 前缀 | Model | 模型 | 如 `MApplication`、`MPart` |
+| `I` 前缀 | Interface | 接口 | 如 `IWorkbench`、`IEclipseContext` |
+| 3.x | Eclipse 3.x | Eclipse 第 3 代平台 | 通过兼容层继续存在 |
+| 4.x / e4 | Eclipse 4.x | Eclipse 第 4 代平台 | 现代 Workbench 运行时 |
 
 ## 一、先给一张全景图
 
@@ -125,14 +125,14 @@
 
 ### 3.2 关键文件
 
-| 文件 | 作用 |
-|---|---|
-| `eclipse.exe` | Windows 原生启动器 |
-| `eclipse.ini` | 启动器参数：JVM、内存、编码、product |
-| `configuration/config.ini` | OSGi 运行时配置：Bundle 列表、启动级别、product ID |
-| `plugins/` | 所有 Bundle 的存放目录 |
-| `p2/` | p2 的安装/更新元数据 |
-| `jre/`（如果有） | 安装包自带的 JRE（Java Runtime Environment，Java 运行时环境） |
+| 文件                         | 作用                                              |
+| -------------------------- | ----------------------------------------------- |
+| `eclipse.exe`              | Windows 原生启动器                                   |
+| `eclipse.ini`              | 启动器参数：JVM、内存、编码、product                         |
+| `configuration/config.ini` | OSGi 运行时配置：Bundle 列表、启动级别、product ID            |
+| `plugins/`                 | 所有 Bundle 的存放目录                                 |
+| `p2/`                      | p2 的安装/更新元数据                                    |
+| `jre/`（如果有）                | 安装包自带的 JRE（Java Runtime Environment，Java 运行时环境） |
 
 ### 3.3 为什么 Java 版本问题总是最先出现
 
@@ -377,14 +377,14 @@ Help > Check for Updates
 
 ### 4.10 第 1 层常见错误
 
-| 错误 | 含义 | 先查什么 |
-|---|---|---|
-| `Bundle cannot be resolved` | 依赖不满足 | MANIFEST 的 Import/Require、目标平台 |
-| `Missing Constraint: Import-Package` | 找不到某个包 | 目标平台有没有提供这个包的 Bundle |
-| `NoClassDefFoundError` | 运行时类不可见 | 包是否 Export/Import，Bundle 是否 ACTIVE |
-| `UnsupportedClassVersionError` | class 版本高于 JVM | BREE、编译 JDK、运行 JDK |
-| `BundleException: Could not resolve module` | 解析失败 | 版本范围、可选依赖、BREE |
-| `ClassCastException`（同名类） | 同一个类被两个 Bundle 加载 | 是否重复打包了 API 包 |
+| 错误                                          | 含义                | 先查什么                               |
+| ------------------------------------------- | ----------------- | ---------------------------------- |
+| `Bundle cannot be resolved`                 | 依赖不满足             | MANIFEST 的 Import/Require、目标平台     |
+| `Missing Constraint: Import-Package`        | 找不到某个包            | 目标平台有没有提供这个包的 Bundle               |
+| `NoClassDefFoundError`                      | 运行时类不可见           | 包是否 Export/Import，Bundle 是否 ACTIVE |
+| `UnsupportedClassVersionError`              | class 版本高于 JVM    | BREE、编译 JDK、运行 JDK                 |
+| `BundleException: Could not resolve module` | 解析失败              | 版本范围、可选依赖、BREE                     |
+| `ClassCastException`（同名类）                   | 同一个类被两个 Bundle 加载 | 是否重复打包了 API 包                      |
 
 ### 4.11 第 1 层类比
 

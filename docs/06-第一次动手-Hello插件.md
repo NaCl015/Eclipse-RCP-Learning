@@ -398,6 +398,8 @@ Run As > Eclipse Application
 
 ### 第 2 天：加一个菜单命令
 
+完整步骤见 [07-第二天-菜单命令](07-第二天-菜单命令.md)。
+
 学习并实践：
 
 - `org.eclipse.ui.commands`：定义命令；
